@@ -1,2 +1,2 @@
 # Ecommerce
-Ecommerce Website created with HTML, BULMA CSS AND VANILLA JS
+ A simple Ecommerce Website created with HTML, BULMA CSS AND VANILLA JS
