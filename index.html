@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/static/shop.ico" type="image/x-icon">
+    <title>MySHOP</title>
+</head>
+
+<body>
+    <nav class="navbar has-shadow is-white">
+        <!-- logo/brand -->
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="/static/coffee-cup.png" alt="" style="max-height:70px" class="py-2 px-2">
+                <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a href="#" class="navbar-item">My Account</a>
+                <a href="#About" class="navbar-item">About</a>
+                <a href="#Shop" class="navbar-item">Shop</a>
+            </div>
+        </div>
+    </nav>
+    <!-- breadcrumbs -->
+    <div class="section pt-4 pb-0">
+        <nav class="breadcrumb has-arrow-separator">
+            <ul class="container">
+                <li><a class="has-text-grey">Dave's Coffee</a></li>
+                <li><a class="has-text-grey">Shop</a></li>
+                <li class="is-active"><a>Smile Jamaica Roast</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- end of breadcrumbs -->
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-3">
+                    <div class="title">
+                        Smile Jamaica Roast
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae odio soluta asperiores eos! Nihil obcaecati reiciendis ducimus provident tempora ea.</p>
+                </div>
+                <div class="column is-6">
+                    <div>
+                        <img src="/static/smile jamaica.jpg" alt="smile jamaica coffee">
+                    </div>
+                </div>
+                <div class="column is-12-tablet is-3-desktop notification">
+                    <div class="is-size-3 mb-4">$10.95</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, minus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="About">
+        <div class="container">
+            <div class="columns is-8 is-variable">
+                <div class="column is-7-tablet">
+                    <!-- tabbed content -->
+                    <h1 class="title has-text-centered">
+                        About Us
+                        <hr>
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sunt voluptas veniam saepe minima aut ad, asperiores consectetur officia eligendi illo non delectus. Dignissimos a quis eligendi dolorum ea? Iste ex quos autem dolore
+                        consequatur quod recusandae reiciendis, rem aliquam fugit quia! Voluptate dignissimos voluptas exercitationem sapiente! Sit, necessitatibus corporis!</p>
+                </div>
+                <div class="column is-5-tablet ">
+                    <!-- message box -->
+                    <div class="message is-dark">
+                        <div class="message-header">
+                            <p class="has-text-light">Fun Fact </p>
+                        </div>
+                        <div class="message-body">
+                            <p>
+                                Legend has it that 9th-century goat herders noticed the effect caffeine had on their goats, who appeared to "dance" after eating the fruit of the Coffea plant. A local monk then made a drink with the produce and found that it kept him awake at night,
+                                thus the original cup of coffee was born.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- message box -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section" id="Shop">
+        <div class="container">
+            <h1 class="title has-text-centered">Related Products</h1>
+            <hr>
+            <div class="columns shop-items  mt-5 is-variable is-multiline">
+                <div class="column shop-item  is-4-desktop">
+                    <div class="card is-fullheight">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="/static/marley coffee.png" style="width:128px" alt="">
+                        </div>
+                        <div class="card-content">
+                            <p class="item-price">$12.99</p>
+                            <p class="title is-size-5 item-name">Marley Coffee</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <button class="has-text-black button is-light add-to-cart">Add to cart</button>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column shop-item is-4-desktop">
+                    <div class="card is-fullheight">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="/static/buffalo soldier.jpg" style="width:128px" alt="">
+                        </div>
+                        <div class="card-content">
+                            <p class="item-price">$15.99</p>
+                            <p class="title is-size-5 item-name">Buffalo Soldier</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <button class="has-text-black  button is-light add-to-cart">Add to cart</button>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column shop-item is-4-desktop">
+                    <div class="card is-fullheight">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="/static/dunkin donuts.jpeg" style="width:128px" alt="">
+                        </div>
+                        <div class="card-content">
+                            <p class="item-price">$12.99</p>
+                            <p class="title is-size-5 item-name">Dunkin Donuts</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <button class="has-text-black  button is-light add-to-cart">Add to cart</button>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column shop-item is-4-desktop">
+                    <div class="card is-fullheight">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="/static/french vanilla.jpg" style="width:128px" alt="">
+                        </div>
+                        <div class="card-content">
+                            <p class="item-price">$11.99</p>
+                            <p class="title is-size-5 item-name">French Vanilla</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <button class="has-text-black  button is-light add-to-cart">Add to cart</button>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column shop-item is-4-desktop">
+                    <div class="card is-fullheight">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="/static/hazelnut.png" style="width:128px" alt="">
+                        </div>
+                        <div class="card-content">
+                            <p class="item-price">$10.99</p>
+                            <p class="title is-size-5 item-name">Hazelnut</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <button class="has-text-black  button is-light add-to-cart">Add to cart</button>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column shop-item is-4-desktop">
+                    <div class="card is-fullheight">
+                        <div class="card-image has-text-centered px-6">
+                            <img src="/static/House Blend.jpg" style="width:128px" alt="">
+                        </div>
+                        <div class="card-content">
+                            <p class="item-price">$13.90</p>
+                            <p class="title is-size-5 item-name">House Blend</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <button class="has-text-black button is-light add-to-cart">Add to cart</button>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            <!-- <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="/static/marley coffee.png" width="100" height="100">
+                    <span class="cart-item-title">Marley Coffee</span>
+                </div>
+                <span class="cart-price cart-column">$12.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="/static/House Blend.jpg" width="100" height="100">
+                    <span class="cart-item-title">House Blend</span>
+                </div>
+                <span class="cart-price cart-column">$13.90</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="2">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div> -->
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+    <section class="hero is-light">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-6">
+                    <p class="title">Dave's Coffee</p>
+                    <span><img src="/static/coffee.png" alt="cup of coffee"></span>
+                    <p class="subtitle mt-5"> &copy 2021 Dave's Franchise. All Rights Reserved</p>
+                </div>
+                <div class="column is-3">
+                    <ul>
+                        <li class="my-3">
+                            Privacy Policy
+                        </li>
+                        <li class="my-3">
+                            Terms of Use
+                        </li>
+                        <li class="my-3">
+                            Careers
+                        </li>
+                    </ul>
+                </div>
+                <div class="column is-3">
+                    <ul>
+                        <li class="my-3">
+                            Locate Our Shops
+                        </li>
+                        <li class="my-3">
+                            Delivery Service
+                        </li>
+                        <li class="my-3">
+                            File a Complaint
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <p class="title">
+                Daves Coffee
+            </p>
+            <p class="subtitle">
+                Primary subtitle
+            </p> -->
+        </div>
+    </section>
+    <script src="store.js" async></script>
+</body>
+
+</html>
