@@ -31,31 +31,32 @@ const addToCartClicked = (event) => {
 }
 
 const updateCartItems = (title, price, src) => {
-    const cartItems = document.querySelector(".cart-items")
-    console.log(cartItems)
-    let cartRoww = document.createElement('div')
-    let cartItemNames = cartItems.querySelectorAll('.cart-item-title')
+    const cartItems = document.querySelector(".cart-items");
+    console.log(cartItems);
+    let cartRoww = document.createElement("div");
+    let cartItemNames = cartItems.querySelectorAll(".cart-item-title");
 
     for (let itemCart of cartItemNames) {
         if (itemCart.innerText === title) {
-            alert('Item Already in Cart')
-            return
+            alert("Item Already in Cart");
+            return;
         }
     }
 
+    // 
     cartRoww.innerHTML = `
     <div class="cart-row">
                 <div class="cart-item cart-column">
                     <img class="cart-item-image" src="${src}" width="100" height="100">
-                    <span class="cart-item-title">${title}</span>
+                    <span class="cart-item-title is-hidden-mobile">${title}</span>
                 </div>
-                <span class="cart-price cart-column">${price}</span>
+                <span class="cart-price cart-column ">${price}</span>
                 <div class="cart-quantity cart-column">
                     <input class="cart-quantity-input" type="number" value="1">
                     <button class="btn btn-danger" type="button">REMOVE</button>
                 </div>
             </div>
-    `
+    `;
 
     const quantityChanged = (event) => {
         let input = event.target;
@@ -65,17 +66,14 @@ const updateCartItems = (title, price, src) => {
         updateCartTotal();
     };
 
-    cartItems.append(cartRoww)
+    cartItems.append(cartRoww);
 
     let quantityInputs = document.querySelectorAll(".cart-quantity-input");
     quantityInputs.forEach((input) => {
         input.addEventListener("change", quantityChanged);
     });
 
-
-
-    updateCartTotal()
-
+    updateCartTotal();
 }
 
 
